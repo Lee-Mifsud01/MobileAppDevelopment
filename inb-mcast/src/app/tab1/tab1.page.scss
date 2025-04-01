@@ -1,0 +1,21 @@
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 1rem;
+}
+ion-card {
+    margin: 0;
+    --border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+  /* Days Left indicator styling */
+.days-left {
+    font-weight: bold;
+    margin: 1rem 0;
+    text-align: center;
+}
