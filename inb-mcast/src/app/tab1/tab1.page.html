@@ -1,17 +1,122 @@
-<ion-header [translucent]="true">
+<ion-header translucent>
   <ion-toolbar>
-    <ion-title>
-      News Updates
-    </ion-title>
+    <img src="/assets/images/logo.png" alt="McastLogo">
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content fullscreen>
+  <ion-grid>
+    
+    <ion-row>
+      <ion-col size="6">
+        <ion-card button routerLink="/tabs/tab2" class="feature-card absent-lecturers">
+          <ion-card-content>
+            <ion-icon name="people" size="large"></ion-icon>
+            <ion-label>Absent Lecturers</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card button routerLink="/tabs/tab3" class="feature-card academic-calendar">
+          <ion-card-content>
+            <ion-icon name="calendar" size="large"></ion-icon>
+            <ion-label>Academic Calendar</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row>
+      <ion-col size="6">
+        <ion-card button routerLink="/tabs/tab4" class="feature-card news-updates">
+          <ion-card-content>
+            <ion-icon name="megaphone" size="large"></ion-icon>
+            <ion-label>News Updates</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card button routerLink="/tabs/tab5" class="feature-card timetables">
+          <ion-card-content>
+            <ion-icon name="time" size="large"></ion-icon>
+            <ion-label>Timetables</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row>
+      <ion-col size="4">
+        <ion-card button routerLink="/tabs/tab6" class="feature-card guidelines">
+          <ion-card-content>
+            <ion-icon name="document-text" size="large"></ion-icon>
+            <ion-label>Guidelines</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="4">
+        <ion-card button routerLink="/tabs/tab7" class="feature-card handbook">
+          <ion-card-content>
+            <ion-icon name="book" size="large"></ion-icon>
+            <ion-label>Handbook</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="4">
+        <ion-card button routerLink="/tabs/tab8" class="feature-card food-menu">
+          <ion-card-content>
+            <ion-icon name="restaurant" size="large"></ion-icon>
+            <ion-label>Food Menu</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row>
+      <ion-col size="4">
+        <ion-card button routerLink="/tabs/tab9" class="feature-card clubs">
+          <ion-card-content>
+            <ion-icon name="people-circle" size="large"></ion-icon>
+            <ion-label>Clubs</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="4">
+        <ion-card button routerLink="/tabs/tab10" class="feature-card well-being">
+          <ion-card-content>
+            <ion-icon name="heart" size="large"></ion-icon>
+            <ion-label>Well-being</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="4">
+        <ion-card button routerLink="/tabs/tab11" class="feature-card internships">
+          <ion-card-content>
+            <ion-icon name="briefcase" size="large"></ion-icon>
+            <ion-label>Internships</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+    <ion-row>
+      <ion-col size="12">
+        <ion-card button routerLink="/tabs/tab12" class="feature-card campus-map">
+          <ion-card-content>
+            <ion-icon name="map" size="large"></ion-icon>
+            <ion-label>Campus Map</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    
+  </ion-grid>
+  
+  <!-- Footer / Days Left Indicator -->
+  <div class="days-left" style="text-align: center; margin: 1rem 0;">
+    <ion-text color="medium">
+      <h2>142 School Days Left</h2>
+    </ion-text>
+  </div>
 </ion-content>

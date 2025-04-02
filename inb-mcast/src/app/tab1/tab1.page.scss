@@ -1,0 +1,30 @@
+
+.feature-card {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.absent-lecturers {
+  background-color: green;
+}
+
+.academic-calendar {
+  background-color: #007bff; 
+}
+
+.news-updates {
+  background-color: orange;
+}
+
+.timetables {
+  background-color: purple;
+}
+
+  ion-content {
+    --background: url('/assets/images/backgroundImg.png') no-repeat center center / cover;
+  }
+  
+
+ 
