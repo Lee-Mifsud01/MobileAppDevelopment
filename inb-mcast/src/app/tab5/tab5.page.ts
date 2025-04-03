@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { NavController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-tab2',
-  templateUrl: 'tab2.page.html',
-  styleUrls: ['tab2.page.scss'],
+  selector: 'app-tab5',
+  templateUrl: 'tab5.page.html',
+  styleUrls: ['tab5.page.scss'],
   standalone: false,
 })
-export class Tab2Page {
+export class Tab5Page {
 
   constructor(private navCtrl: NavController) {}
 
