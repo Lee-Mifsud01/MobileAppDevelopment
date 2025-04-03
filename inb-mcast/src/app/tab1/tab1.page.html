@@ -114,12 +114,13 @@
   </ion-grid>
   
   <!-- Footer / Days Left Indicator -->
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>
+  <ion-footer>
+    <ion-toolbar class="days-toolbar">
+      <ion-title class="days-left-text">
         {{ daysLeft }} day{{ daysLeft === 1 ? '' : 's' }} left until {{ targetDate | date: 'longDate' }}
-      </ion-card-title>
-    </ion-card-header>
-  </ion-card>
+      </ion-title>
+    </ion-toolbar>
+  </ion-footer>
+  
   
 </ion-content>
