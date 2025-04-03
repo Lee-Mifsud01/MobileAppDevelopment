@@ -1,18 +1,18 @@
 import { Component } from '@angular/core';
-import { NavController } from '@ionic/angular';
+import { FunctionsService } from '../services/functions.service';
 
 @Component({
-  selector: 'app-tab9',
+  selector: 'app-tab49',
   templateUrl: 'tab9.page.html',
   styleUrls: ['tab9.page.scss'],
   standalone: false,
 })
 export class Tab9Page {
 
-  constructor(private navCtrl: NavController) {}
+  constructor(private functionService: FunctionsService) {}
 
   back() {
-    this.navCtrl.back();
+    this.functionService.back();
   }
 
 }

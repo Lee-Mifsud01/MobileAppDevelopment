@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from '@ionic/angular';
+import { FunctionsService } from '../services/functions.service';
 
 @Component({
   selector: 'app-tab8',
@@ -9,10 +9,10 @@ import { NavController } from '@ionic/angular';
 })
 export class Tab8Page {
 
-  constructor(private navCtrl: NavController) {}
+  constructor(private functionService: FunctionsService) {}
 
   back() {
-    this.navCtrl.back();
+    this.functionService.back();
   }
 
 }

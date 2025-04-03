@@ -20,6 +20,10 @@ ion-toolbar{
   --background: white ;
 }
 
+ion-content{
+  --padding-top: 12%;
+}
+
 .absent-lecturers {
   background: rgba(88, 176, 74, 0.6);
   justify-content: center;
