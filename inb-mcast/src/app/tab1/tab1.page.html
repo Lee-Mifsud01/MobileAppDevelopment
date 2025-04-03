@@ -114,9 +114,12 @@
   </ion-grid>
   
   <!-- Footer / Days Left Indicator -->
-  <div class="days-left" style="text-align: center; margin: 1rem 0;">
-    <ion-text color="medium">
-      <h2>142 School Days Left</h2>
-    </ion-text>
-  </div>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        {{ daysLeft }} day{{ daysLeft === 1 ? '' : 's' }} left until {{ targetDate | date: 'longDate' }}
+      </ion-card-title>
+    </ion-card-header>
+  </ion-card>
+  
 </ion-content>

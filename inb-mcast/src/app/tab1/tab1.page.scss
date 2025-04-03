@@ -28,3 +28,9 @@ ion-content {
 ion-toolbar{
   --background: white;
 }
+
+ion-card-title {
+  font-size: 1.4rem;
+  color: var(--ion-color-primary);
+  text-align: center;
+}

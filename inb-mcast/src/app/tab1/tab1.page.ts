@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component,  OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-tab1',
@@ -6,8 +7,20 @@ import { Component } from '@angular/core';
   styleUrls: ['tab1.page.scss'],
   standalone: false,
 })
-export class Tab1Page {
+export class Tab1Page implements OnInit {
+
+  daysLeft: number = 0;
+  targetDate: Date = new Date('2025-05-28'); 
 
   constructor() {}
 
+  ngOnInit() {
+    this.calculateDaysLeft();
+  }
+
+  calculateDaysLeft() {
+    const today = new Date();
+    const diff = this.targetDate.getTime() - today.getTime();
+    this.daysLeft = Math.ceil(diff / (1000 * 60 * 60 * 24));
+  }
 }
