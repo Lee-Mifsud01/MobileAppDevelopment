@@ -14,7 +14,7 @@
             
             <ion-label>Absent Lecturers</ion-label>
             <br>
-            <ion-icon name="people-outline" size="large"></ion-icon>
+            <ion-icon name="people-outline" class="large-icon"></ion-icon>
           </ion-card-content>
         </ion-card>
       </ion-col>
@@ -24,7 +24,7 @@
             
             <ion-label>Academic Calendar</ion-label>
             <br>
-            <ion-icon name="calendar-outline" size="large"></ion-icon>
+            <ion-icon name="calendar-outline" class="large-icon"></ion-icon>
             <br>
           </ion-card-content>
         </ion-card>
@@ -38,7 +38,7 @@
             
             <ion-label>News Updates</ion-label>
             <br>
-            <ion-icon name="newspaper-outline" size="large"></ion-icon>
+            <ion-icon name="newspaper-outline" class="large-icon"></ion-icon>
           </ion-card-content>
         </ion-card>
       </ion-col>
@@ -48,7 +48,7 @@
             
             <ion-label>Timetables</ion-label>
             <br>
-            <ion-icon name="time-outline" size="large"></ion-icon>
+            <ion-icon name="time-outline" class="large-icon"></ion-icon>
           </ion-card-content>
         </ion-card>
       </ion-col>
@@ -61,7 +61,7 @@
             
             <ion-label>Guidelines</ion-label>
             <br>
-            <ion-icon name="document-text" size="large"></ion-icon>
+            <ion-icon name="document-text" class="small-icon"></ion-icon>
 
           </ion-card-content>
         </ion-card>
@@ -72,7 +72,7 @@
             
             <ion-label>Handbook</ion-label>
             <br>
-            <ion-icon name="book-outline" size="large"></ion-icon>
+            <ion-icon name="book-outline" class="small-icon"></ion-icon>
 
           </ion-card-content>
         </ion-card>
@@ -83,7 +83,7 @@
             
             <ion-label>Food Menu</ion-label>
             <br>
-            <ion-icon name="restaurant-outline" size="large"></ion-icon>
+            <ion-icon name="restaurant-outline" class="small-icon"></ion-icon>
 
           </ion-card-content>
         </ion-card>
@@ -97,7 +97,7 @@
             
             <ion-label>Clubs</ion-label>
             <br>
-            <ion-icon name="people-circle-outline" size="large"></ion-icon>
+            <ion-icon name="people-circle-outline" class="small-icon"></ion-icon>
             
           </ion-card-content>
         </ion-card>
@@ -107,7 +107,7 @@
           <ion-card-content>
             <ion-label>Well-being</ion-label>
             <br>
-            <ion-icon name="heart-outline" size="large"></ion-icon>
+            <ion-icon name="heart-outline" class="small-icon"></ion-icon>
             
             
           </ion-card-content>
@@ -118,7 +118,7 @@
           <ion-card-content>
             <ion-label>Internships</ion-label>
             <br>
-            <ion-icon name="briefcase-outline" size="large"></ion-icon>
+            <ion-icon name="briefcase-outline" class="small-icon"></ion-icon>
             
           </ion-card-content>
         </ion-card>
@@ -132,7 +132,7 @@
           <ion-card-content>
             <ion-label>Campus Map</ion-label>
             <br>
-            <ion-icon name="map-outline" size="large"></ion-icon>
+            <ion-icon name="map-outline" class="small-icon"></ion-icon>
             
           </ion-card-content>
         </ion-card>
@@ -142,13 +142,13 @@
   </ion-grid>
   
   <!-- Footer / Days Left Indicator -->
-  <ion-footer>
+  <div class="custom-footer">
     <ion-toolbar class="days-toolbar">
       <ion-title class="days-left-text">
         {{ daysLeft }} day{{ daysLeft === 1 ? '' : 's' }} left until {{ targetDate | date: 'longDate' }}
       </ion-title>
     </ion-toolbar>
-  </ion-footer>
+  </div>
   
   
 </ion-content>
