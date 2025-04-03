@@ -35,3 +35,28 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+
+
+ion-icon {
+    color: white;
+}
+
+ion-button, ion-label, ion-text, ion-card-title, ion-card-subtitle {
+    color: white;
+}
+
+  /* If you are using buttons with text */
+ion-button::part(native) {
+    color: white;
+}
+
+  /* If you are using specific button classes */
+.custom-btn {
+    color: white;
+}
+
+  /* For buttons containing both text and icons */
+ion-button ion-icon, ion-button span {
+    color: white;
+}
+
