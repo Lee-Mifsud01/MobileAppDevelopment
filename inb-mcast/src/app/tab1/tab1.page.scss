@@ -3,37 +3,63 @@
   overflow: hidden;
   position: relative;
   text-align: center;
+  justify-content: center;
+  background: rgba(64, 52, 84, 0.6);
+}
+
+.campus-map {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  background: rgba(244, 106, 198, 0.6);
+}
+
+ion-toolbar{
+  background: white !important;
 }
 
 .absent-lecturers {
   background: rgba(88, 176, 74, 0.6);
+  justify-content: center;
 }
 
 .academic-calendar {
   background: rgba(244, 106, 198, 0.6);
+  justify-content: center;
 }
 
 .news-updates {
   background-color: rgba(211, 85, 50, 0.6);
+  justify-content: center;
 }
 
 .timetables {
   background-color:  rgba(153, 143, 187, 0.6);
+  justify-content: center;
 }
 
 ion-content {
   --background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/images/backgroundImg2.jpg') no-repeat center center / cover;
 }
   
-ion-toolbar{
-  --background: white;
-}
+
 
 //for footer & Countdown
 .days-toolbar {
-  --background: orange !important; // force orange override
-  color: white;
+  --background: rgba(230, 133, 16, 0.9) !important; // force orange override
+  
 }
+
+.academic-calendar ion-icon, 
+.absent-lecturers ion-icon, 
+.news-updates ion-icon, 
+.timetables ion-icon {
+  
+
+}
+
 
 .days-left-text {
   color: white;
