@@ -8,8 +8,11 @@ import { Tab12PageRoutingModule } from './tab12-routing.module';
 
 import { Tab12Page } from './tab12.page';
 
+import { SharedModule } from '../shared/shared.module';
+
 @NgModule({
   imports: [
+    SharedModule,
     CommonModule,
     FormsModule,
     IonicModule,

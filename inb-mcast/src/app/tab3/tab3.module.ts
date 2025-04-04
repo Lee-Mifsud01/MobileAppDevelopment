@@ -7,8 +7,11 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 
 import { Tab3PageRoutingModule } from './tab3-routing.module';
 
+import { SharedModule } from '../shared/shared.module';
+
 @NgModule({
   imports: [
+    SharedModule,
     IonicModule,
     CommonModule,
     FormsModule,
