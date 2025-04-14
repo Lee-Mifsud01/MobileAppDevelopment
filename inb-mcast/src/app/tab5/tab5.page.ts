@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { FunctionsService } from '../services/functions.service';
 
 @Component({
   selector: 'app-tab5',
@@ -9,10 +8,20 @@ import { FunctionsService } from '../services/functions.service';
 })
 export class Tab5Page {
 
-  constructor(private functionService: FunctionsService) {}
+  classList = [
+    { name: 'Class A', value: 'class-schedule1' },
+    { name: 'Class B', value: 'class-schedule2' },
+    { name: 'Class C', value: 'class-schedule3' },
+  ];
 
-  back() {
-    this.functionService.back();
+  selectedClass = 'class-schedule1';
+  currentTimetableImage = '/assets/images/class-schedule1.png';
+  onClassChange(event: any){
+    this.currentTimetableImage = `assets/images/${this.selectedClass}.png`;
   }
+
+  constructor() {}
+
+
 
 }
