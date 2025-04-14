@@ -147,6 +147,13 @@
       <ion-title class="days-left-text">
         {{ daysLeft }} day{{ daysLeft === 1 ? '' : 's' }} left until {{ targetDate | date: 'longDate' }}
       </ion-title>
+
+       <!-- Dark Mode Toggle Icon on the right -->
+    <ion-buttons slot="end">
+      <ion-button (click)="toggleDarkMode()">
+        <ion-icon class="dark-mode-icon" [name]="isDarkMode ? 'sunny' : 'moon'"></ion-icon>
+      </ion-button>
+    </ion-buttons>
     </ion-toolbar>
   </div>
   

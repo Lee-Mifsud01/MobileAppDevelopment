@@ -1,2 +1,16 @@
 // For information on how to create your own theme, please see:
 // http://ionicframework.com/docs/theming/
+
+/* Global Dark Mode Styling */
+body.dark {
+    --ion-background-color: #121212;
+    --ion-text-color: #ffffff;
+    --ion-toolbar-background: #1e1e1e;
+    --ion-item-background: #1e1e1e;
+    --ion-card-background: #1e1e1e;
+    --ion-color-step-50: #222;
+    --ion-color-step-150: #333;
+    --ion-color-step-850: #ccc;
+    --ion-color-step-950: #eee;
+  }
+  

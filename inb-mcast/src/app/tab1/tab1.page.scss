@@ -90,3 +90,27 @@ ion-content {
   text-align: center;
   font-weight: 500;
 }
+
+
+.dark-mode-icon {
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+/* Light Mode */
+body:not(.dark) .dark-mode-icon {
+  color: #1c1c1c !important; /* Dark icon for visibility */
+}
+
+/* Dark Mode */
+body.dark .dark-mode-icon {
+  color: #f4ce42 !important; /* Bright yellow */
+}
+
+/* Optional Styling for Footer */
+.days-toolbar {
+  --background: rgba(230, 133, 16, 0.9) !important;  /* Your orange */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
