@@ -1,0 +1,35 @@
+.guidelines-container {
+    border: 2px solid #0066cc;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  
+  .header-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    width: 60px;
+  }
+  
+  .section-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .section-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .section-content a {
+    color: #0066cc;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+  
