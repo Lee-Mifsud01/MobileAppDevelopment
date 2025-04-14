@@ -1,9 +1,37 @@
 <app-header title="Well-being"></app-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">tab10</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
+
+  <ion-card (click)="openServiceInfo('therapy')" class="service-card">
+    <img src="assets/images/therapy.jpg" />
+    <ion-card-content>
+      <h2>Therapy Services</h2>
+      <p>Support for mental health and well-being.</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card (click)="openServiceInfo('addiction')" class="service-card">
+    <img src="assets/images/addiction.jpg" />
+    <ion-card-content>
+      <h2>Addiction Help</h2>
+      <p>Recovery support and resources.</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card (click)="openServiceInfo('mental-health')" class="service-card">
+    <img src="assets/images/mental-health.jpg" />
+    <ion-card-content>
+      <h2>Mental Health</h2>
+      <p>Talk to a professional for support.</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card (click)="openServiceInfo('nutrition')" class="service-card">
+    <img src="assets/images/nutrition.jpg" />
+    <ion-card-content>
+      <h2>Nutritional Advice</h2>
+      <p>Guidance for a healthier lifestyle.</p>
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>
