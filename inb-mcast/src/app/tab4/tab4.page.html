@@ -1,10 +1,18 @@
 <app-header title="News Updates"></app-header>
 
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">tab4</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <div class="news-section">
+    <h2 class="section-title">MCAST News Updates</h2>
+
+    <div class="news-card" *ngFor="let item of news">
+      <img [src]="item.image" alt="news image" />
+      <div class="news-details">
+        <p>{{ item.title }}</p>
+        <ion-button fill="outline" class="info-button" size="small">
+          More Info
+        </ion-button>
+      </div>
+    </div>
+  </div>
 </ion-content>
