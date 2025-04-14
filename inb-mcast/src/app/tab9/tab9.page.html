@@ -1,10 +1,15 @@
 <app-header title="Clubs"></app-header>
 
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">tab9</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <div class="clubs-section">
+    <h2 class="section-title">MCAST Clubs</h2>
+    <p class="section-subtitle">Join a club, meet new people & have fun!</p>
+
+    <div class="club-card" *ngFor="let club of clubs">
+      <ion-icon [name]="club.icon"></ion-icon>
+      <h3>{{ club.name }}</h3>
+      <p>{{ club.description }}</p>
+    </div>
+  </div>
 </ion-content>
