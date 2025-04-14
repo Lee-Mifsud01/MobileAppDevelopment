@@ -1,0 +1,20 @@
+ion-toolbar{
+    --background: white ;
+}
+
+.back-button{
+    color: black;
+}
+
+.ion-title-text{
+    color: black;
+    position: absolute;
+    left: 30%;
+    top: 25%;
+    text-align: center;
+}
+
+.toolbar {
+    position: relative;
+    height: 56px;
+}

@@ -35,3 +35,38 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+
+
+
+
+
+/* ion icons */
+ion-icon {
+    color: white;
+}
+
+ion-button, ion-label, ion-text {
+    color: white;
+}
+
+/* buttons with text */
+ion-button::part(native) {
+    color: white;
+}
+
+
+/* buttons containing both text and icons */
+ion-button ion-icon, ion-button span {
+    color: white;
+}
+
+/* Go back button css */
+
+.back-button{
+    width: 45px;
+    height: 45px;
+}
+
+
+
+
