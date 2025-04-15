@@ -1,33 +1,37 @@
 .map-container {
-    width:100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
+    width:1500px;
+    height: 1000px;
+    overflow: scroll;
+    position: absolute;
+    display: inline-block;
+    white-space: nowrap;
 }
 
 .map-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 1500px;
+    height: 1000px;
+    user-select: none;
+    -webkit-user-drag: none; 
 }
 
 ion-content{
     --background: transparent;
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 
 .map-wrapper {
     width: 100%;
     height: 100%;
     position: relative;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .map-controls {
-    position: absolute;
-    top: 16px;
-    right: 16px;
+    position: fixed;
+    top: 14%;
+    right: 4%;
     z-index: 10;
     display: flex;
     flex-direction: column;
