@@ -1,6 +1,5 @@
 <app-header title="Clubs"></app-header>
 
-
 <ion-content>
   <div class="clubs-section">
     <h2 class="section-title">MCAST Clubs</h2>
@@ -10,6 +9,10 @@
       <ion-icon [name]="club.icon"></ion-icon>
       <h3>{{ club.name }}</h3>
       <p>{{ club.description }}</p>
+
+      <ion-button expand="block" fill="outline" size="small" (click)="openJoinForm(club.name)">
+        Join Now
+      </ion-button>
     </div>
   </div>
 </ion-content>

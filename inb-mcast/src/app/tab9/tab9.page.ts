@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FunctionsService } from '../services/functions.service';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab49',
@@ -9,7 +10,8 @@ import { FunctionsService } from '../services/functions.service';
 })
 export class Tab9Page {
 
-  constructor(private functionService: FunctionsService) {}
+  constructor(private functionService: FunctionsService,
+  private alertController: AlertController) {}
 
   back() {
     this.functionService.back();
@@ -26,5 +28,38 @@ export class Tab9Page {
     { name: 'Adventure Club', icon: 'compass-outline', description: 'Explore. Hike. Discover.' },
     { name: 'Art Club', icon: 'color-palette-outline', description: 'Unleash your creativity' }
   ];
-  
+
+  async openJoinForm(clubName: string) {
+    const alert = await this.alertController.create({
+      header: `Join ${clubName}`,
+      inputs: [
+        { name: 'name', type: 'text', placeholder: 'Your Name' },
+        { name: 'email', type: 'email', placeholder: 'Your Email' },
+        { name: 'studentId', type: 'text', placeholder: 'Student ID' },
+      ],
+      buttons: [
+        { text: 'Cancel', role: 'cancel' },
+        {
+          text: 'Submit',
+          handler: (data) => {
+            console.log(`Join request for ${clubName}:`, data);
+            this.showConfirmation(clubName);
+          }
+        }
+      ],
+      cssClass: 'join-alert'
+    });
+
+    await alert.present();
+  }
+
+  async showConfirmation(clubName: string) {
+    const confirmation = await this.alertController.create({
+      header: 'Success!',
+      message: `You have requested to join ${clubName}.`,
+      buttons: ['OK']
+    });
+
+    await confirmation.present();
+  }
 }
