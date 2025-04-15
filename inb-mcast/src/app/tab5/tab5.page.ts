@@ -16,9 +16,18 @@ export class Tab5Page {
 
   selectedClass = 'class-schedule1';
   currentTimetableImage = '/assets/images/class-schedule1.png';
+
   onClassChange(event: any){
     this.currentTimetableImage = `assets/images/${this.selectedClass}.png`;
   }
+
+  downloadImage(){
+    const link = document.createElement('a');
+    link.href = this.currentTimetableImage;
+    link.download = `${this.selectedClass}_timetable.png`;
+    link.click();
+  }
+
 
   constructor() {}
 

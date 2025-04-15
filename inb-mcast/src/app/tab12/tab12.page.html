@@ -1,9 +1,16 @@
 <app-header title="Campus Map"></app-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">tab12</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-toolbar>
+    <ion-searchbar style="--background: white; --color: black; --placeholder-color: grey" placeholder="search class..." disabled></ion-searchbar>
+  </ion-toolbar>
+  <div class="map-wrapper">
+    <div class="map-controls">
+      <ion-button fill="solid" size="small">+</ion-button>
+      <ion-button fill="solid" size="small">-</ion-button>
+    </div>
+    <div class="map-container" #mapContainer>
+      <img src="/assets/images/map.png" class="map-image" />
+    </div>
+  </div>
 </ion-content>

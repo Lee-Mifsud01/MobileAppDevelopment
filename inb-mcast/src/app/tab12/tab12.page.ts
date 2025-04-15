@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { FunctionsService } from '../services/functions.service';
 
 @Component({
@@ -9,6 +9,7 @@ import { FunctionsService } from '../services/functions.service';
 })
 export class Tab12Page {
 
+  
   constructor(private functionService: FunctionsService) {}
 
   back() {
