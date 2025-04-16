@@ -16,14 +16,6 @@
   background: rgba(244, 106, 198, 0.6);
 }
 
-ion-toolbar{
-  --background: white ;
-}
-
-ion-content{
-  --padding-top: 12%;
-}
-
 .absent-lecturers {
   background: rgba(88, 176, 74, 0.6);
   justify-content: center;
@@ -40,41 +32,69 @@ ion-content{
 }
 
 .timetables {
-  background-color:  rgba(153, 143, 187, 0.6);
+  background-color: rgba(153, 143, 187, 0.6);
   justify-content: center;
 }
 
-ion-content {
-  --background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/images/backgroundImg2.jpg') no-repeat center center / cover;
-  --padding-bottom: 70px; 
-}
-  
-
-//For footer & Countdown
-.days-toolbar {
-  --background: rgba(230, 133, 16, 0.9) !important; // force orange override
-  
-}
-
-//.academic-calendar ion-icon, 
-//.absent-lecturers ion-icon, 
-//.news-updates ion-icon, 
-//.timetables ion-icon {
-//}
-
-//Small icons size
-.small-icon{
+/*  Icon Sizes  */
+.small-icon {
   width: 40px;
   height: 40px;
 }
 
-//Large Icon size
-.large-icon{
+.large-icon {
   width: 60px;
   height: 60px;
 }
 
-.custom-footer{
+/* Content Background & Padding  */
+ion-content {
+  --background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url('/assets/images/backgroundImg2.jpg') no-repeat center center / cover;
+  --padding-top: 12%;
+  --padding-bottom: 70px;
+}
+
+/*  Home Toolbar (with logo) */
+ion-toolbar.home-toolbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  transition: background 0.3s ease;
+}
+
+body.dark ion-toolbar.home-toolbar {
+  --background: #1e1e1e;
+}
+
+/* Logo Image (Tab1) */
+.logo-img {
+  width: 230px;
+  height: auto;
+  transition: filter 0.3s ease;
+}
+
+body.dark .logo-img {
+  filter: brightness(0.85); // optional
+}
+
+/* Dark Mode Toggle Icon  */
+.dark-mode-icon {
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+body:not(.dark) .dark-mode-icon {
+  color: #1c1c1c !important;
+}
+
+body.dark .dark-mode-icon {
+  color: #f4ce42 !important;
+}
+
+/* Footer / Countdown */
+.custom-footer {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -83,6 +103,12 @@ ion-content {
   text-align: center;
 }
 
+.days-toolbar {
+  --background: rgba(230, 133, 16, 0.9) !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .days-left-text {
   color: white;
@@ -92,25 +118,3 @@ ion-content {
 }
 
 
-.dark-mode-icon {
-  font-size: 24px;
-  transition: color 0.3s ease;
-}
-
-/* Light Mode */
-body:not(.dark) .dark-mode-icon {
-  color: #1c1c1c !important; /* Dark icon for visibility */
-}
-
-/* Dark Mode */
-body.dark .dark-mode-icon {
-  color: #f4ce42 !important; /* Bright yellow */
-}
-
-/* Optional Styling for Footer */
-.days-toolbar {
-  --background: rgba(230, 133, 16, 0.9) !important;  /* Your orange */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}

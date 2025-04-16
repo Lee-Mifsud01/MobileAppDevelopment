@@ -1,13 +1,9 @@
-ion-toolbar{
-    --background: white ;
-}
-
 .back-button{
     color: black;
 }
 
 .ion-title-text{
-    color: black;
+    color:#444;
     position: absolute;
     left: 30%;
     top: 25%;
@@ -18,3 +14,13 @@ ion-toolbar{
     position: relative;
     height: 56px;
 }
+
+body.dark ion-toolbar {
+    --background: #1e1e1e;
+    --color: #ffffff;
+  }
+  
+  body.dark ion-title,
+  body.dark ion-icon {
+    color: #ffffff !important;
+  }
