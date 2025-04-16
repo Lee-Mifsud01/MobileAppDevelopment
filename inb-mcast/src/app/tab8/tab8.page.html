@@ -6,4 +6,112 @@
       <ion-title size="large">tab8</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  
+  <ion-grid>
+    <ion-row align-items-start>
+      
+      <ion-col size="12" size-md="8">
+        <ion-card *ngFor="let day of menu; let i = index">
+          <ion-card-header>
+            <ion-card-title>{{ day.name }} {{ getFormattedDate(i) }}</ion-card-title>
+
+          </ion-card-header>
+          <ion-card-content>
+            <ion-list>
+              <ion-item>
+                <ion-label><strong>Soup</strong>: {{ day.soup }}</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label><strong>Main Meal</strong>: {{ day.main }}</ion-label>
+
+
+              </ion-item>
+              <ion-item>
+                <ion-label><strong>Vegetable</strong>: {{ day.vegetable }}</ion-label>
+
+              </ion-item>
+              <ion-item>
+                <ion-label><strong>Pasta</strong>: {{ day.pasta }}</ion-label>
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <!-- Column 2: Salads and Prices-->
+      <ion-col size="12" size-md="4">
+
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Selection of Salads</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-list lines="none">
+              <ion-item>
+                <ion-label>
+                  <strong>Caesar Chicken</strong><br />
+                  €4.75 (GF)<br />
+                  Grilled Chicken, Lettuce, Parmesan, Croutons, Caesar Dressing
+                </ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label>
+                  <strong>Tuna Salad</strong><br />
+                  €4.75 (GF)<br />
+                  Tuna, Onions, Boiled Egg, Cherry Tomatoes, Lettuce, Capers, Olive Oil
+                </ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label>
+                  <strong>Smoked Salmon Salad</strong><br />
+                  €6.75 (GF)<br />
+                  Smoked Salmon, Lettuce, Capers, Onions, Lemon Wedge
+                </ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label>
+                  <strong>Caprese Salad</strong><br />
+                  €5.00 (GF)<br />
+                  Tomato, Mozzarella Di Bufala, Rucola, Basil, Olive Oil, Balsamic
+                </ion-label>
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+
+
+
+        <!-- Prices -->
+        <ion-card>
+          <ion-card-content>
+            <ion-item>
+              <ion-label><strong>Soup of the Day 350ml</strong></ion-label>
+              <ion-note slot="end">€3.00</ion-note>
+            </ion-item>
+            <ion-item>
+              <ion-label><strong>Main Meal</strong></ion-label>
+              <ion-note slot="end">€4.75</ion-note>
+            </ion-item>
+
+            <ion-item>
+              <ion-label><strong>Pasta Dish</strong></ion-label>
+              <ion-note slot="end">€4.00</ion-note>
+            </ion-item>
+            <ion-item>
+              <ion-label><strong>Vegetable of the Day</strong></ion-label>
+              <ion-note slot="end">€1.75</ion-note>
+
+            </ion-item>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+  
+
+
+
 </ion-content>

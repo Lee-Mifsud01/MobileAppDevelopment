@@ -1,0 +1,15 @@
+.card-carousel {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+.card-scroll {
+    display: flex;
+    gap: 10px;
+}
+
+.menu-card {
+    min-width: 300px;
+    flex: 0 0 auto;
+}
