@@ -9,7 +9,7 @@
       <img [src]="item.image" alt="news image" />
       <div class="news-details">
         <p>{{ item.title }}</p>
-        <ion-button fill="outline" class="info-button" size="small">
+        <ion-button fill="outline" class="info-button" size="small" (click)="openLink(item.link)">
           More Info
         </ion-button>
       </div>
