@@ -1,18 +1,28 @@
 <app-header title="Absent Lecturers"></app-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">tab2</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
+  <!-- Search Bar -->
+  <ion-searchbar 
+    [(ngModel)]="searchTerm" 
+    (ionInput)="filterLecturers()" 
+    placeholder="Search lecturer...">
+  </ion-searchbar>
+
+  <!-- Absent Lecturers Box -->
   <div class="absent-card">
-    <h1><u><strong>Lecturer’s absent Today</strong></u></h1>
-    
-    <p> Mr. Dominic Tringali</p>
-    <p> Mr. Nico Conti</p>
-    <p> Ms. Nadia Haber</p>
-    <p> Ms. Claire Vella</p>
+    <h1><u><strong>Lecturers Absent Today</strong></u></h1>
+    <div *ngIf="filtered.length > 0; else noLecturers">
+      <p *ngFor="let lecturer of filtered">{{ lecturer }}</p>
+    </div>
+    <ng-template #noLecturers>
+      <p>No lecturers found.</p>
+    </ng-template>
   </div>
+
+  <!-- Image Below the Box -->
+  <div class="absent-image">
+    <img src="https://cdn-icons-png.flaticon.com/512/5278/5278640.png" alt="Absent Lecturer" />
+  </div>
+
 </ion-content>
