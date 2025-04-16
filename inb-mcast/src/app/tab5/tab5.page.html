@@ -3,7 +3,7 @@
 <ion-content [fullscreen]="true">
   <ion-card class="timetable-card">
     <ion-card-header>
-      <ion-card-title>Timetable</ion-card-title>
+      <ion-card-title class="title-text">Timetable</ion-card-title>
       <ion-select class="class-color" [(ngModel)]="selectedClass" placeholder="Select Class" (ionChange)="onClassChange($event)">
         <ion-select-option *ngFor="let class of classList" [value]="class.value">
           {{ class.name }}
