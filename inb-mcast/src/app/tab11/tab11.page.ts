@@ -10,6 +10,8 @@ export class Tab11Page {
 
   constructor() {}
 
-
+  openLink(url: string) {
+    window.open(url, '_blank');
+  }
 
 }

@@ -3,8 +3,7 @@
 
 <ion-content [fullscreen]="true">
   <ion-card class="card">
-    <img src="assets/images/internship1.png"  alt="Image" class="card-image"/>
-
+    <img src="assets/images/internship1.png"  alt="Image" class="card-image" >
     <div class="card-image-container">      
       <div class="class-overlay">
         <h2 class="title">Software developer</h2>
@@ -14,11 +13,13 @@
       <p>Required to know: JavaScript, Python, SQL, HTML, CSS</p>
       
     </ion-card-content>
-    <ion-button fill="outline" class="info-button" size="small">More Info</ion-button>  
+    <div class="button-wrapper">
+    <ion-button fill="outline" class="info-button" size="small" (click)="openLink('https://mita.gov.mt')">More Info</ion-button>  
+  </div>
   </ion-card>
 
   <ion-card class="card">
-    <img src="assets/images/bovLogo.jpeg"  alt="Image" class="card-image"/>
+    <img src="assets/images/bovLogo.jpeg"  alt="Image" class="card-image" >
 
     <div class="card-image-container">      
       <div class="class-overlay">
@@ -29,7 +30,9 @@
       <p>Required to know: Communication skills, Accounting, Economics, Finance</p>
       
     </ion-card-content>
-    <ion-button fill="outline" class="info-button" size="small">More Info</ion-button>  
+    <div class="button-wrapper">
+    <ion-button fill="outline" class="info-button" size="small" (click)="openLink('https://www.bov.com/careers')">More Info</ion-button>  
+  </div>
   </ion-card>
 
   <ion-card class="card">
@@ -44,7 +47,9 @@
       <p>Required to know: English, Interviewing skills, Multimedia skills</p>
       
     </ion-card-content>
-    <ion-button fill="outline" class="info-button" size="small">More Info</ion-button>  
+    <div class="button-wrapper">
+    <ion-button fill="outline" class="info-button" size="small" (click)="openLink('https://tvmnews.mt/en/jobs/')">More Info</ion-button>  
+  </div>
   </ion-card>
 
   
