@@ -6,11 +6,10 @@
   </ion-toolbar>
   <div class="map-wrapper">
     <div class="map-controls">
-      <ion-button fill="solid" size="small">+</ion-button>
-      <ion-button fill="solid" size="small">-</ion-button>
+      <ion-button fill="solid" size="small" (click)="switchMap()">Switch Map</ion-button>
     </div>
     <div class="map-container">
-      <img src="/assets/images/map.png" class="map-image" />
+      <img [src]="currentMap" class="map-image" />
     </div>
   </div>
 </ion-content>
