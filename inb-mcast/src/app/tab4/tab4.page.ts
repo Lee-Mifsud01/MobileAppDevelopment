@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab4',
@@ -9,11 +8,8 @@ import { NavController } from '@ionic/angular';
 })
 export class Tab4Page {
 
-  constructor(private navCtrl: NavController) {}
+  constructor() {}
 
-  back() {
-    this.navCtrl.back();
-  }
 
   news = [
     {

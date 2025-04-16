@@ -4,7 +4,7 @@
   <ion-card class="timetable-card">
     <ion-card-header>
       <ion-card-title>Timetable</ion-card-title>
-      <ion-select [(ngModel)]="selectedClass" placeholder="Select Class" (ionChange)="onClassChange($event)">
+      <ion-select class="class-color" [(ngModel)]="selectedClass" placeholder="Select Class" (ionChange)="onClassChange($event)">
         <ion-select-option *ngFor="let class of classList" [value]="class.value">
           {{ class.name }}
         </ion-select-option>
@@ -13,7 +13,7 @@
     <ion-card-content class="timetableImageContainer">
       <img [src]="currentTimetableImage" alt="Timetable"/>
     </ion-card-content>
-    <ion-button expand="block" (click)="downloadImage()">Download Timetable</ion-button>
+    <ion-button class="button" expand="block" (click)="downloadImage()">Download Timetable</ion-button>
   </ion-card>
 </ion-content>
 

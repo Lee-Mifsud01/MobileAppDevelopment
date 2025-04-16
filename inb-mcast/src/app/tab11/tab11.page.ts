@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { FunctionsService } from '../services/functions.service';
 
 @Component({
   selector: 'app-tab11',
@@ -9,10 +8,8 @@ import { FunctionsService } from '../services/functions.service';
 })
 export class Tab11Page {
 
-  constructor(private functionService: FunctionsService) {}
+  constructor() {}
 
-  back() {
-    this.functionService.back();
-  }
+
 
 }

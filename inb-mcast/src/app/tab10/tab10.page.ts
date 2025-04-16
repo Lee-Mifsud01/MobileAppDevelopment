@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { FunctionsService } from '../services/functions.service';
 import { AlertController } from '@ionic/angular';
 
 @Component({
@@ -10,14 +9,8 @@ import { AlertController } from '@ionic/angular';
 })
 export class Tab10Page {
 
-  constructor(
-    private functionService: FunctionsService,
-    private alertController: AlertController
-  ) {}
+  constructor(private alertController: AlertController) {}
 
-  back() {
-    this.functionService.back();
-  }
 
   async openServiceInfo(service: string) {
     let header = '';
