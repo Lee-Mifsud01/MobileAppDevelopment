@@ -1,8 +1,10 @@
+/* Applies a light background color and horizontal padding to the whole page */
 .guidelines-background {
   --background: #f4f6fb;
   padding: 0 16px;
 }
 
+/* Styles the container that holds all the guideline content */
 .guidelines-container {
   background-color: #ffffff;
   padding: 20px;
@@ -11,12 +13,14 @@
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Styles the section title text */
 .section-title {
   margin-top: 20px;
   font-size: 1.5rem;
   color: #1a1a1a;
 }
 
+/* Styles the links inside the section content */
 .section-content a {
   color: #004aad;
   text-decoration: underline;
