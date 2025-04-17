@@ -1,17 +1,24 @@
-<!-- This is the Footer html code -->
+<!-- Footer container -->
 <ion-footer>
   <div class="custom-footer">
+
+    <!-- Toolbar that holds the countdown and dark mode toggle -->
     <ion-toolbar class="days-toolbar">
+
+      <!-- Countdown text -->
       <ion-title class="days-left-text">
+        <!-- Display "X days left until [target date]" -->
         {{ footer.daysLeft }} day{{ footer.daysLeft === 1 ? '' : 's' }} left until {{ footer.targetDate | date: 'longDate' }}
       </ion-title>
 
-      <!-- Dark Mode Toggle Icon on the right -->
+      <!-- Toggle button for dark/light mode -->
       <ion-buttons slot="end">
         <ion-button (click)="toggleDarkMode()">
+          <!-- Change icon based on the current theme -->
           <ion-icon class="dark-mode-icon" [name]="footer.isDarkMode ? 'sunny' : 'moon'"></ion-icon>
         </ion-button>
-    </ion-buttons>
+      </ion-buttons>
+
     </ion-toolbar>
   </div>
 </ion-footer>

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FunctionsService } from 'src/app/services/functions.service';
+import { FunctionsService } from 'src/app/services/functions.service'; // Custom service that handles logic
 
 @Component({
   selector: 'app-footer',
@@ -9,17 +9,18 @@ import { FunctionsService } from 'src/app/services/functions.service';
 })
 export class FooterComponent {
 
+  //Shared service to access daysLeft and dark mode toggle
   constructor(public footer: FunctionsService) {}
 
-  //Calling the functions from the FunctionService
+  /**
+   * Toggles dark mode when the icon is clicked.
+   * The logic is defined in the shared FunctionsService.
+   */
   toggleDarkMode() {
     this.footer.toggleDarkMode();
   }
 
-  calculateDaysLeft(){
+  calculateDaysLeft() {
     this.footer.calculateDaysLeft();
   }
-
-
 }
-
