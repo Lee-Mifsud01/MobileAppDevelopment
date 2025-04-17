@@ -11,6 +11,7 @@ export class FooterComponent {
 
   constructor(public footer: FunctionsService) {}
 
+  //Calling the functions from the FunctionService
   toggleDarkMode() {
     this.footer.toggleDarkMode();
   }

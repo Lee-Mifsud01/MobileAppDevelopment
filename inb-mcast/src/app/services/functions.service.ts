@@ -18,15 +18,11 @@ export class FunctionsService {
     this.calculateDaysLeft();
   }
 
+  //Back button function
   back(){
     this.navigation.back();
   }
-
-  ngOnInit() {
-    this.calculateDaysLeft();
-    this.loadDarkMode(); // ensure correct mode and logo are set on page load
-  }
-
+  //This is the function of the days left feature in the app
   calculateDaysLeft() {
     const today = new Date();
     const diff = this.targetDate.getTime() - today.getTime();

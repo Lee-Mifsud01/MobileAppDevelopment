@@ -17,10 +17,12 @@ export class Tab5Page {
   selectedClass = 'class-schedule1';
   currentTimetableImage = '/assets/images/class-schedule1.png';
 
+  //This function allows the buttons to switch between different images
   onClassChange(event: any){
     this.currentTimetableImage = `assets/images/${this.selectedClass}.png`;
   }
 
+  //Download the currently selected image function
   downloadImage(){
     const link = document.createElement('a');
     link.href = this.currentTimetableImage;
@@ -30,7 +32,4 @@ export class Tab5Page {
 
 
   constructor() {}
-
-
-
 }

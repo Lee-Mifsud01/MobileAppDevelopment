@@ -1,7 +1,9 @@
+//Css for back button
 .back-button{
     color: black;
 }
 
+//Text css
 .ion-title-text{
     color:#444;
     position: absolute;
@@ -10,11 +12,13 @@
     text-align: center;
 }
 
+//Made sure that the header sticks to the top and adjusted the height
 .toolbar {
     position: relative;
     height: 56px;
 }
 
+//Dark mode css
 body.dark ion-toolbar {
     --background: #1e1e1e;
     --color: #ffffff;

@@ -2,8 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 
+//Importing the HeaderComponent
 import { HeaderComponent } from './header/header.component';
-
+//Importing the FooterComponent
 import { FooterComponent } from './footer/footer.component';
 
 
@@ -13,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
     CommonModule,
     IonicModule
   ],
-  exports: [HeaderComponent, FooterComponent] //this will allow it to be used in other modules
+  //The exports are needed for these components to be used in other modules
+  exports: [HeaderComponent, FooterComponent] 
 })
 export class SharedModule { }
