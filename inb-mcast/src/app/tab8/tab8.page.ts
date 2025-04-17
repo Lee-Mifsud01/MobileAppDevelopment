@@ -10,6 +10,7 @@ export class Tab8Page {
 
   constructor() {}
 
+  //Added the info for the food
   menu = [
     {
       name: 'Monday',
@@ -41,6 +42,7 @@ export class Tab8Page {
     }
   ];
 
+  //Date Format function
   getFormattedDate(index: number): string {
 
     
