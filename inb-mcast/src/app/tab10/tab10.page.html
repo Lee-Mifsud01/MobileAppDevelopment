@@ -1,8 +1,10 @@
 <!-- HTML code for the Well-being page -->
 <app-header title="Well-being"></app-header>
 
+<!-- Main content area -->
 <ion-content class="ion-padding">
 
+  <!--  Therapy Services Card  -->
   <ion-card (click)="openServiceInfo('therapy')" class="service-card">
     <img src="assets/images/therapy.jpg" />
     <ion-card-content>
@@ -11,6 +13,7 @@
     </ion-card-content>
   </ion-card>
 
+  <!-- Addiction Help Card -->
   <ion-card (click)="openServiceInfo('addiction')" class="service-card">
     <img src="assets/images/addiction.jpg" />
     <ion-card-content>
@@ -19,6 +22,7 @@
     </ion-card-content>
   </ion-card>
 
+  <!-- Mental Health Support Card-->
   <ion-card (click)="openServiceInfo('mental-health')" class="service-card">
     <img src="assets/images/mental-health.jpg" />
     <ion-card-content>
@@ -27,6 +31,7 @@
     </ion-card-content>
   </ion-card>
 
+  <!--  Nutritional Advice Card -->
   <ion-card (click)="openServiceInfo('nutrition')" class="service-card">
     <img src="assets/images/nutrition.jpg" />
     <ion-card-content>

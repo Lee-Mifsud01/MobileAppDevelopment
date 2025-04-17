@@ -2,13 +2,18 @@
 <app-header title="News Updates"></app-header>
 
 <ion-content>
+  <!-- News Section Container -->
   <div class="news-section">
     <h2 class="section-title">MCAST News Updates</h2>
 
+    <!-- Loop through each news item -->
     <div class="news-card" *ngFor="let item of news">
+      <!-- Loop through each news item -->
       <img [src]="item.image" alt="news image" />
+      <!-- News text and button -->
       <div class="news-details">
         <p>{{ item.title }}</p>
+        <!-- More info button that opens link -->
         <ion-button fill="outline" class="info-button" size="small" (click)="openLink(item.link)">
           More Info
         </ion-button>

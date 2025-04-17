@@ -11,6 +11,7 @@ export class Tab9Page {
 
   constructor(private alertController: AlertController) {}
 
+  // Array of club details to display in the UI
   clubs = [
     { name: 'Sports Club', icon: 'football-outline', description: 'Stay active and healthy' },
     { name: 'Gaming Club', icon: 'game-controller-outline', description: 'Play. Compete. Connect.' },
@@ -24,21 +25,22 @@ export class Tab9Page {
     { name: 'Art Club', icon: 'color-palette-outline', description: 'Unleash your creativity' }
   ];
 
+  // Show an alert form when user clicks "Join Now"
   async openJoinForm(clubName: string) {
     const alert = await this.alertController.create({
-      header: `Join ${clubName}`,
+      header: `Join ${clubName}`, // dynamic header with club name
       inputs: [
         { name: 'name', type: 'text', placeholder: 'Your Name' },
         { name: 'email', type: 'email', placeholder: 'Your Email' },
         { name: 'studentId', type: 'text', placeholder: 'Student ID' },
       ],
       buttons: [
-        { text: 'Cancel', role: 'cancel' },
+        { text: 'Cancel', role: 'cancel' }, // close dialog without submitting
         {
           text: 'Submit',
           handler: (data) => {
-            console.log(`Join request for ${clubName}:`, data);
-            this.showConfirmation(clubName);
+            console.log(`Join request for ${clubName}:`, data); // log user input
+            this.showConfirmation(clubName); // log user input
           }
         }
       ],
@@ -48,6 +50,7 @@ export class Tab9Page {
     await alert.present();
   }
 
+  // Show success confirmation alert after form submission
   async showConfirmation(clubName: string) {
     const confirmation = await this.alertController.create({
       header: 'Success!',

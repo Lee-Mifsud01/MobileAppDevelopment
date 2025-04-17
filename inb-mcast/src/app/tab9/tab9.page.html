@@ -2,15 +2,20 @@
 <app-header title="Clubs"></app-header>
 
 <ion-content>
+  <!-- Main container for clubs section -->
   <div class="clubs-section">
+    <!-- Section title -->
     <h2 class="section-title">MCAST Clubs</h2>
     <p class="section-subtitle">Join a club, meet new people & have fun!</p>
 
+    <!-- Loop through each club in the array -->
     <div class="club-card" *ngFor="let club of clubs">
       <ion-icon [name]="club.icon"></ion-icon>
+      <!-- Club name and description -->
       <h3>{{ club.name }}</h3>
       <p>{{ club.description }}</p>
 
+      <!-- Join Now button triggers form popup -->
       <ion-button expand="block" fill="outline" size="small" (click)="openJoinForm(club.name)">
         Join Now
       </ion-button>

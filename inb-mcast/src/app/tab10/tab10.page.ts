@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AlertController } from '@ionic/angular';
+import { AlertController } from '@ionic/angular'; // Importing Ionic alert service
 
 @Component({
   selector: 'app-tab10',
@@ -11,11 +11,16 @@ export class Tab10Page {
 
   constructor(private alertController: AlertController) {}
 
-
+  /**
+   * Opens an alert with information based on the selected service.
+   * Triggered when the user clicks on a service card.
+   * @param service - the key name for the type of support selected
+   */
   async openServiceInfo(service: string) {
-    let header = '';
-    let message = '';
+    let header = '';  // Title of the alert
+    let message = ''; // Body text of the alert
 
+    // Set the content of the alert based on the service selected
     switch(service) {
       case 'therapy':
         header = 'Therapy Services';
@@ -50,13 +55,15 @@ export class Tab10Page {
         break;
     }
 
+    // Create the alert using Ionic's AlertController
     const alert = await this.alertController.create({
-      header: header,
-      message: message,
-      buttons: ['Close'],
-      cssClass: 'custom-alert',
+      header: header,         // Alert title
+      message: message,       // Dynamic alert message based on selection
+      buttons: ['Close'],     // Single dismiss button
+      cssClass: 'custom-alert' // Custom styling class (defined in SCSS)
     });
 
+    // Show the alert
     await alert.present();
   }
 }

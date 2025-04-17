@@ -10,6 +10,8 @@ export class Tab4Page {
 
   constructor() {}
 
+  // List of news items with title, image path, and external link
+
   news = [
     {
       title: "Fresher’s week – Gozo Campus (11th October)",
@@ -28,6 +30,7 @@ export class Tab4Page {
     }
   ];
 
+  // List of news items with title, image path, and external link
   openLink(url: string) {
     window.open(url, '_blank'); // opens in new tab
   }

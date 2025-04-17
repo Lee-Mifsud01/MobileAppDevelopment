@@ -1,6 +1,7 @@
 .news-section {
     padding: 16px;
   
+    // Section header
     .section-title {
       font-size: 1.4rem;
       font-weight: bold;
@@ -9,6 +10,7 @@
       margin-bottom: 16px;
     }
   
+    // News card style
     .news-card {
       background-color: #020548;
       border-radius: 16px;
@@ -20,6 +22,7 @@
       align-items: center;
       text-align: center;
   
+      // News image
       img {
         width: 100%;
         height: auto;
@@ -27,6 +30,7 @@
         margin-bottom: 12px;
       }
   
+      // Text + button container
       .news-details {
         color: white;
   
@@ -36,6 +40,7 @@
           margin-bottom: 12px;
         }
   
+        // Button style
         .info-button {
             --background: grey;
             --border-color: white;
