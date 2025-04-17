@@ -3,6 +3,30 @@
 This mobile application serves as an interactive notice board and student guide for MCAST students. The app includes key features like absent lecturer, assignment guidelines, academic calendar, and other campus tools aimed at improving the student experience.
 
 ---
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v16 or later)  
+- [Ionic CLI](https://ionicframework.com/docs/cli)  
+- Git
+
+### Installation
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/MobileAppDevelopment
+
+# 2. Change into project directory
+cd inb-mcast
+
+# 3. Install dependencies
+npm install
+
+# 4. Start the development server
+ionic serve
 
 ## Contributors & Responsibilities
 
