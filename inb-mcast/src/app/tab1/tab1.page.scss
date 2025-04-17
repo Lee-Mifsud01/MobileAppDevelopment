@@ -67,47 +67,7 @@ body.dark ion-toolbar.home-toolbar {
   --background: #1e1e1e;
 }
 
-/* Logo Image */
 .logo-img {
-  width: 230px;
-  height: auto;
+  height: 80px;
+  width: auto;
 }
-
-/* Dark Mode Toggle Icon  */
-.dark-mode-icon {
-  font-size: 24px;
-}
-
-body:not(.dark) .dark-mode-icon {
-  color: #1c1c1c !important;
-}
-
-body.dark .dark-mode-icon {
-  color: #f4ce42 !important;
-}
-
-/* Footer / Countdown */
-.custom-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-  text-align: center;
-}
-
-.days-toolbar {
-  --background: rgba(230, 133, 16, 0.9) !important;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.days-left-text {
-  color: white;
-  font-size: 1.1rem;
-  text-align: center;
-  font-weight: 500;
-}
-
-

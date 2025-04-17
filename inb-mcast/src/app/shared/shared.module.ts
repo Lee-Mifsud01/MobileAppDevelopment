@@ -4,14 +4,15 @@ import { IonicModule } from '@ionic/angular';
 
 import { HeaderComponent } from './header/header.component';
 
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
-  declarations: [HeaderComponent],
+  declarations: [HeaderComponent, FooterComponent],
   imports: [
     CommonModule,
     IonicModule
   ],
-  exports: [HeaderComponent] //this will allow it to be used in other modules
+  exports: [HeaderComponent, FooterComponent] //this will allow it to be used in other modules
 })
 export class SharedModule { }
