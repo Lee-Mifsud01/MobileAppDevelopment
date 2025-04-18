@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 export class Tab11Page {
 
   constructor() {}
-
+  //This function will allow the users to enter a new link 
   openLink(url: string) {
     window.open(url, '_blank');
   }

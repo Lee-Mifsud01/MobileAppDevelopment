@@ -1,17 +1,21 @@
 <!-- HTML code for the Timetable page -->
 <app-header title="TimeTables"></app-header>
-
+<!-- Main Content of page -->
 <ion-content [fullscreen]="false">
   <ion-card class="timetable-card">
     <ion-card-header>
       <ion-card-title class="title-text">Timetable</ion-card-title>
+      
       <ion-select class="class-color" [(ngModel)]="selectedClass" placeholder="Select Class" (ionChange)="onClassChange($event)">
+        <!-- The options in the dropdown button is created by a loop -->
         <ion-select-option *ngFor="let class of classList" [value]="class.value">
           {{ class.name }}
         </ion-select-option>
       </ion-select>
     </ion-card-header>
+
     <ion-card-content class="timetableImageContainer">
+      <!-- This displays the timetable that is selected through the drop down button -->
       <img [src]="currentTimetableImage" alt="Timetable"/>
     </ion-card-content>
     <ion-button class="button" expand="block" (click)="downloadImage()">Download Timetable</ion-button>

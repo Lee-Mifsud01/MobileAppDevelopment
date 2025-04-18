@@ -1,3 +1,4 @@
+//Code for the timetable container
 .timetable-image-container{
     display: flex;
     justify-content: center;
@@ -6,21 +7,25 @@
     overflow: hidden;
 }
 
+//The code of the timetable image
 .timetable-image-container img {
     max-height: 100%;
     max-width: 100%;
     object-fit: contain;
 }
 
+//The code for the entirety of the card, this code is pushing the card down
 .timetable-card{
     margin-top: 40%;
     background-color: rgba(0, 0, 0, 0.6); 
 }
 
+//Setting the background image
 ion-content {
     --background: linear-gradient(rgba(0, 0, 0, 0.482), rgba(0, 0, 0, 0.4)), url('/assets/images/timetableBackground.jpg') no-repeat center center / cover;
 }
 
+//Text css
 .class-color{
     color: white;
 }
@@ -29,6 +34,7 @@ ion-content {
     color:white;
 }
 
+//Button design code
 .button {
     --background: rgb(128, 128, 128);
     --border-color: white;
