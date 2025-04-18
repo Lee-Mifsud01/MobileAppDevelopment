@@ -1,5 +1,6 @@
+//This is the code for the map
 .map-container {
-    width:1500px;
+    width: 1500px;
     height: 1000px;
     overflow: scroll;
     position: absolute;
@@ -14,6 +15,7 @@
     -webkit-user-drag: none; 
 }
 
+
 ion-content{
     --background: transparent;
     padding: 0;
@@ -21,6 +23,7 @@ ion-content{
     overflow: hidden;
 }
 
+//Allows user to naivgate through the map and move it
 .map-wrapper {
     width: 100%;
     height: 100%;
@@ -28,6 +31,9 @@ ion-content{
     overflow: scroll;
 }
 
+//Adjusting the map controls to make the buttons look better
+//I created this class because I was planning on having multiple
+//buttons such as zoom in and out, but these where scrapped.
 .map-controls {
     position: fixed;
     top: 14%;

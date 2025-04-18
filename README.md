@@ -83,3 +83,4 @@ Although tasks were divided among group members, most of the work was completed 
 
 - Our application has been designed to accommodate modern mobile phones such as the Google Pixel 7 
 
+- To open the build on pc the user will need to install serve in the terminal on vs code, open the www folder on vs code and run the command 'serve' in the terminal. This will create a local host for the user 
