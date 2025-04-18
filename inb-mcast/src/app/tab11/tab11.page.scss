@@ -1,4 +1,4 @@
-//Basic code for the card
+/* Basic code for the card */
 .card{
     border-radius: 20px;
     overflow: hidden;
@@ -14,7 +14,7 @@
     display: block;
 }
 
-//Code for the text
+/* Code for the text */
 .title{
     color: white;
     text-align: center;
@@ -25,7 +25,7 @@ p{
     color: white
 }
 
-//Code for the button
+/* Code for the button */
 .button-wrapper {
     display: flex;
     justify-content: center;
