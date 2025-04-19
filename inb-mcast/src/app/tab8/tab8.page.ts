@@ -42,16 +42,17 @@ export class Tab8Page {
     }
   ];
 
-  //Date Format function
+  //Returns the date of the week based on the menu index
+   // Calculates the Monday of the current week and adds 'index' days
   getFormattedDate(index: number): string {
 
     
-    const today = new Date();
+    const today = new Date();  // Current date
     const dayOfWeek = today.getDay();
 
     const monday = new Date(today);
     const diffToMonday = dayOfWeek === 0 ? -6 : 1 - dayOfWeek;
-    monday.setDate(today.getDate() + diffToMonday + index);
+    monday.setDate(today.getDate() + diffToMonday + index);  // Add offset for each day in the menu
 
     const options: Intl.DateTimeFormatOptions = { day: 'numeric', month: 'long' };
     return monday.toLocaleDateString('en-GB', options);
