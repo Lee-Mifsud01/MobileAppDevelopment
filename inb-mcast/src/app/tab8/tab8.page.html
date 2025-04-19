@@ -2,19 +2,21 @@
 <app-header title="Food Menu"></app-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+
     <ion-toolbar>
       <ion-title size="large">tab8</ion-title>
     </ion-toolbar>
-  </ion-header>
-
   
+    <!-- Grid layout for responsive two-column display -->
   <ion-grid>
     <ion-row align-items-start>
       
+      <!-- Column 1: Daily food menu -->
       <ion-col size="12" size-md="8">
+        <!-- Looping through 'menu' array -->
         <ion-card *ngFor="let day of menu; let i = index">
           <ion-card-header>
+            <!-- Displaying day name and formatted date -->
             <ion-card-title>{{ day.name }} {{ getFormattedDate(i) }}</ion-card-title>
 
           </ion-card-header>
@@ -87,6 +89,7 @@
         <!-- Prices -->
         <ion-card>
           <ion-card-content>
+            <!-- Each item shows name and price in slot 'end' -->
             <ion-item>
               <ion-label><strong>Soup of the Day 350ml</strong></ion-label>
               <ion-note slot="end">€3.00</ion-note>
@@ -111,6 +114,7 @@
     </ion-row>
   </ion-grid>
 
+   <!-- Page Footer -->
   <br>
   <br>
   <br>
