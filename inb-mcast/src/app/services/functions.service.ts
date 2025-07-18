@@ -6,9 +6,17 @@ import { NavController } from '@ionic/angular';
 })
 export class FunctionsService {
 
-  
   daysLeft: number = 0;
-  targetDate: Date = new Date('2025-05-28'); 
+  nextStipendDaysLeft: number = 0;
+  targetDate: Date = new Date('2025-05-28');
+
+  stipendDates: Date[] = [
+    new Date('2025-06-17'),
+    new Date('2025-07-15'),
+    new Date('2025-08-12')
+  ];
+
+  nextStipendDate: Date | null = null;
 
   isDarkMode: boolean = false;
   logoUrl: string = '';
@@ -16,17 +24,31 @@ export class FunctionsService {
   constructor(private navigation: NavController) { 
     this.loadDarkMode();
     this.calculateDaysLeft();
+    this.calculateNextStipendDaysLeft();
   }
 
-  //Back button function
   back(){
     this.navigation.back();
   }
-  //This is the function of the days left feature in the app
+
   calculateDaysLeft() {
     const today = new Date();
     const diff = this.targetDate.getTime() - today.getTime();
     this.daysLeft = Math.ceil(diff / (1000 * 60 * 60 * 24));
+  }
+
+  calculateNextStipendDaysLeft() {
+    const today = new Date();
+    const futureStipend = this.stipendDates.find(date => date > today);
+    
+    if (futureStipend) {
+      this.nextStipendDate = futureStipend;
+      const diff = futureStipend.getTime() - today.getTime();
+      this.nextStipendDaysLeft = Math.ceil(diff / (1000 * 60 * 60 * 24));
+    } else {
+      this.nextStipendDate = null;
+      this.nextStipendDaysLeft = 0;
+    }
   }
 
   loadDarkMode() {
