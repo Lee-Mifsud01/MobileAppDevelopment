@@ -9,8 +9,8 @@ import { Component} from '@angular/core';
 export class Tab12Page {
 
   //Added the maps as string
-  map1: string = 'assets/images/map.png';
-  map2: string = 'assets/images/map2.png';
+  map1: string = 'assets/images/1stfloor.png';
+  map2: string = 'assets/images/2ndfloor.png';
   
   //Selecting a default map to show
   currentMap: string = this.map1;

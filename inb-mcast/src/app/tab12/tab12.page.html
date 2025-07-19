@@ -2,13 +2,10 @@
 <app-header title="Campus Map"></app-header>
 
 <ion-content [fullscreen]="true">
-  <ion-toolbar>
-    <!-- Added a searchbar which won't have any function to it. This would be there as a future improvment. I also included the styling here for the searchbar -->
-    <ion-searchbar style="--background: white; --color: black; --placeholder-color: grey" placeholder="search class..." disabled></ion-searchbar>
-  </ion-toolbar>
+
   <div class="map-wrapper">
     <div class="map-controls">
-      <ion-button fill="solid" size="small" (click)="switchMap()">Switch Map</ion-button>
+      <ion-button fill="solid" size="small" (click)="switchMap()">Switch floor</ion-button>
     </div>
     <div class="map-container">
       <img [src]="currentMap" class="map-image" />
