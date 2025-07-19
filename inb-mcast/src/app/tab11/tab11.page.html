@@ -1,4 +1,3 @@
-<!-- HTML code for the Internships page -->
 <app-header title="Internships"></app-header>
 
 <ion-content [fullscreen]="true">
@@ -10,6 +9,16 @@
     placeholder="Search internships...">
   </ion-searchbar>
 
+  <ion-item>
+    <ion-label>Filter by Category</ion-label>
+    <ion-select [(ngModel)]="selectedCategory" (ionChange)="onSearchChange()">
+      <ion-select-option value="All">All</ion-select-option>
+      <ion-select-option value="IT">IT</ion-select-option>
+      <ion-select-option value="Finance">Finance</ion-select-option>
+      <ion-select-option value="Media">Media</ion-select-option>
+    </ion-select>
+  </ion-item>
+  
   <!-- Internship cards -->
   <ion-card *ngFor="let internship of filteredInternships" class="card">
     <img [src]="internship.image" alt="Image" class="card-image">
@@ -26,7 +35,7 @@
     </div>
   </ion-card>
 
-  <br><br><br>
+  <br><br><br><br><br><br>
   <app-footer></app-footer>
 
 </ion-content>
